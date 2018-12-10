@@ -3,16 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import {createStore, combineReducers, applyMiddleware} from 'redux';
 import logger from 'redux-logger';
 
-const initialValues = (state = {
-    feeling: 0, 
-    understanding: 0, 
-    supported: 0, 
-    comments: ''}, 
-    action) => {
+const initialValues = (state = { feeling: 0, understanding: 0, supported: 0, comments: ''},  action) => {
    switch (action.type) {
         case 'ADD_FEELING': 
             return {...state, feeling: action.payload}
@@ -35,5 +30,5 @@ let store = createStore(
     }),
     applyMiddleware(logger)
 )
-ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><App/></Provider>, document.getElementById('root'));
 registerServiceWorker();
