@@ -9,10 +9,10 @@ class Review extends Component {
     render() {
         return (
             <div>
-                <p>Feeling: {this.props.reduxState.buttonReducer.feeling}</p>
-                <p>Understanding: {this.props.reduxState.buttonReducer.understanding} </p>
-                <p>Support: {this.props.reduxState.buttonReducer.supported}</p>
-                <p>Comments: {this.props.reduxState.buttonReducer.comments}</p>
+                <p>Feeling: {this.props.reduxState.initialValues.feeling}</p>
+                <p>Understanding: {this.props.reduxState.initialValues.understanding} </p>
+                <p>Support: {this.props.reduxState.initialValues.supported}</p>
+                <p>Comments: {this.props.reduxState.initialValues.comments}</p>
             </div>
         )
     }

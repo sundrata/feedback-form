@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
+import {createStore, combineReducers, applyMiddleware} from 'redux';cons
 import { Provider } from 'react-redux';
-import {createStore, combineReducers, applyMiddleware} from 'redux';
 import logger from 'redux-logger';
 
 const initialValues = (state = { feeling: 0, understanding: 0, supported: 0, comments: ''},  action) => {
