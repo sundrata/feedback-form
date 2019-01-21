@@ -19,21 +19,21 @@ The parts:
 
 ## THE REVIEW COMPONENT
 
-[x] In addition to the multi-step form, the app needs to display the results of each step clearly and at all times. The simplest could be another component on the DOM which shows the results of the current survey and a Submit button.
+- [x] In addition to the multi-step form, the app needs to display the results of each step clearly and at all times. The simplest could be another component on the DOM which shows the results of the current survey and a Submit button.
 
 ### Incomplete, Submit button is disabled:
- [x]
+- [x]
 ![comments](wireframes/review-component-inactive.png)
 
 ### Survey complete, Submit button is active:
-[x]
+- [x]
 ![comments](wireframes/review-component-active.png)
 
 ## SUBMIT THE FEEDBACK
 
- [x] The `Review` portion needs a submit button which will be clicked on to actually submit the completed feedback to the server. This submit button should only be active when all of the survey steps are complete.
+- [x] The `Review` portion needs a submit button which will be clicked on to actually submit the completed feedback to the server. This submit button should only be active when all of the survey steps are complete.
 
- [x]When the submit button is clicked, save the submission in the database. The user should see a submission success page.
+- [x]When the submit button is clicked, save the submission in the database. The user should see a submission success page.
 
 ![understanding](wireframes/page-five.png)
 
